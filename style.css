@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-size: 18px;
+font-size: 18px;
 /* ### Primary */
 --light-red: hsl(0, 100%, 67%);
 --light-red-lo: hsl(0, 100%, 67%, .1);
@@ -33,24 +33,59 @@
 --white: hsl(0, 0%, 100%);
 --pale-blue: hsl(221, 100%, 96%);
 --light-lavender: hsl(241, 100%, 89%);
+--light-lavender-lo: hsl(241, 100%, 89%, .2);
 --dark-gray-blue: hsl(224, 30%, 27%);
 
 }
 
 * {
   font-family: 'CustomFont';
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pale-blue);
 }
 
 .result {
   display: flex;
-  width: 500px;
+  max-width: 34rem;
 
   margin-inline: auto;
+  margin-block: 1rem;
+
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: .75rem 1rem 2rem var(--light-lavender-lo);
 }
 
 .result > * {
   flex: 1 0 50%;
   padding: 2rem;
+}
+
+.result-score {
+  --circle-size: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+  border-radius: 100%;
+  margin-inline: auto;
+  width: var(--circle-size);
+  height: var(--circle-size);
+}
+
+.result-score > span {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.result__overall {
+  border-radius: 1.5rem;
+  background-image: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+  color: var(--white);
 }
 
 .result__summary {
@@ -64,6 +99,7 @@
 .result__summary-header {
   font-weight: 700;
   margin-block-end: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .score {
