@@ -96,6 +96,12 @@ body {
   /* font-size: 16px; */
 }
 
+.result__overall-header {
+  text-align: center;
+  color: var(--light-lavender);
+}
+
+.result__overall-header,
 .result__summary-header {
   font-weight: 700;
   margin-block-end: 1.5rem;
@@ -105,10 +111,12 @@ body {
 .score {
   display: flex;
   margin-block-start: .75rem;
-  padding: 1rem 1rem;
+padding: .75rem .75rem;
   border-radius: .75rem;
   font-weight: 500;
   align-items: center;
+
+  font-size: .8rem;
 }
 
 .score > span {
