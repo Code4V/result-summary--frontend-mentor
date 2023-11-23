@@ -1,8 +1,132 @@
+@import url(./assets/reset.css);
 @font-face {
   font-family: 'CustomFont';
   src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
+:root {
+  font-size: 18px;
+/* ### Primary */
+--light-red: hsl(0, 100%, 67%);
+--light-red-lo: hsl(0, 100%, 67%, .1);
+
+--orange-yellow: hsl(39, 100%, 56%);
+--orange-yellow-lo: hsl(39, 100%, 56%, .1);
+
+--green-teal: hsl(166, 100%, 37%);
+--green-teal-lo: hsl(166, 100%, 37%, .1);
+
+--cobalt-blue: hsl(234, 85%, 45%);
+--cobalt-blue-lo: hsl(234, 85%, 45%, .1);
+
+/* ## Gradients */
+
+/* bg */
+--light-slate-blue: hsl(252, 100%, 67%);
+--light-royal-blue: hsl(241, 81%, 54%);
+
+/* circle */
+--violet-blue: hsla(256, 72%, 46%, 1);
+--persian-blue: hsla(241, 72%, 46%, 0);
+
+/* ### Neutral */
+--white: hsl(0, 0%, 100%);
+--pale-blue: hsl(221, 100%, 96%);
+--light-lavender: hsl(241, 100%, 89%);
+--dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+
 * {
   font-family: 'CustomFont';
+}
+
+.result {
+  display: flex;
+  width: 500px;
+
+  margin-inline: auto;
+}
+
+.result > * {
+  flex: 1 0 50%;
+  padding: 2rem;
+}
+
+.result__summary {
+  color: var(--dark-gray-blue)
+}
+
+.result__summary * {
+  /* font-size: 16px; */
+}
+
+.result__summary-header {
+  font-weight: 700;
+  margin-block-end: 1.5rem;
+}
+
+.score {
+  display: flex;
+  margin-block-start: .75rem;
+  padding: 1rem 1rem;
+  border-radius: .75rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+.score > span {
+  font-weight: 600;
+}
+
+.score:last-of-type {
+  margin-block-end: 1rem;
+}
+
+.score--reaction {
+  color: var(--light-red);
+  background-color: var(--light-red-lo);
+}
+
+.score--memory {
+  color: var(--orange-yellow);
+  background-color: var(--orange-yellow-lo);
+}
+
+.score--verbal {  
+  color: var(--green-teal);
+  background-color: var(--green-teal-lo);
+}
+
+.score--visual {
+  color: var(--cobalt-blue);
+  background-color: var(--cobalt-blue-lo);
+}
+
+.score__title {
+  margin-inline-start: .6rem;
+}
+
+.score > span:first-of-type {
+  margin-inline-start: auto;
+  margin-inline-end: .5rem;
+  font-weight: 600;
+  color: var(--dark-gray-blue);
+}
+
+.score > span:last-of-type {
+  color: var(--dark-gray-blue);
+  opacity: .6
+}
+
+.btn {
+  width: 100%;
+  border-radius: 100svh;
+  border: 0;
+  padding: .75rem 0;
+  margin-block-start: 1rem;
+
+  font-weight: 600;
+  color: var(--white);
+  background: var(--dark-gray-blue);
 }
