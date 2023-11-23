@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -18,24 +19,38 @@
 
   <main class="result">
     <section class="result__overall">
-      Your Result
-      76
-      of 100
-      Great
+      <h1 class="result__overall-header">Your Result</h1>
+      <div class="score__overall-score">
+        <span>76</span>
+        of 100
+      </div>
+      <span>Great</span>
       You scored higher than 65% of the people who have taken these tests.
     </section>
     
     <section class="result__summary">
-      Summary
-      Reaction
-      80 / 100
-      Memory
-      92 / 100
-      Verbal
-      61 / 100
-      Visual
-      72 / 100
-      Continue
+      <h2 class="result__summary-header">Summary</h2>
+      <div class="score">
+        <img src="assets/images/icon-reaction.svg" alt="reaction" srcset="">
+        <p class="score__title">Reaction</p>
+        <span>80</span> / 100
+      </div>
+      <div class="score">
+        <img src="assets/images/icon-memory.svg" alt="memory" srcset="">
+        <p class="score__title">Memory</p>
+        <span>92</span> / 100
+      </div>
+      <div class="score">
+        <img src="assets/images/icon-verbal.svg" alt="verbal" srcset="">
+        <p class="score__title">Verbal</p>
+        <span>61</span> / 100
+      </div>
+      <div class="score">
+        <img src="assets/images/icon-visual.svg" alt="visual" srcset="">
+        <p class="score__title">Visual</p>
+        <span>72</span> / 100
+      </div>
+      <button class="btn">Continue</button>
     </section>
   </main>
   
