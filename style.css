@@ -1,5 +1,6 @@
 @import url(./assets/reset.css);
 @import url(./styles/result.css);
+@import url(./styles/responsive.css);
 @font-face {
   font-family: 'CustomFont';
   src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
