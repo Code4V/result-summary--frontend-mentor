@@ -1,0 +1,12 @@
+@media (min-width: 765px) {
+   .result {
+    flex-flow: row wrap;
+    margin-block: 1rem;
+    border-radius: 1.5rem;
+   }
+
+   .result__overall {
+    border-radius: 1.5rem;
+   }
+
+}
