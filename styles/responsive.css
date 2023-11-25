@@ -3,10 +3,28 @@
     flex-flow: row wrap;
     margin-block: 1rem;
     border-radius: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+
+   .result > * {
+   padding: 2rem;
    }
 
    .result__overall {
     border-radius: 1.5rem;
+   }
+
+   .result__overall-header,
+   .result__summary-header {
+   margin-block-end: 1.5rem;
+   }
+
+   .result__overall-description {
+      margin-block-end: auto;
    }
 
 }

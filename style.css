@@ -39,8 +39,9 @@ font-size: 18px;
 --white: hsl(0, 0%, 100%);
 --pale-blue: hsl(221, 100%, 96%);
 --light-lavender: hsl(241, 100%, 89%);
---light-lavender-lo: hsl(241, 100%, 89%, .2);
+--light-lavender-lo: hsla(241, 100%, 89%, .1);
 --dark-gray-blue: hsl(224, 30%, 27%);
+--dark-gray-blue-lo: hsl(224, 30%, 27%, .1);
 
 }
 
@@ -50,5 +51,5 @@ font-size: 18px;
 }
 
 body {
-  background-color: var(--pale-blue);
+  background-color: var(--white);
 }
